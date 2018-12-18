@@ -1,0 +1,212 @@
+{
+  "$id": "https://fiks.ks.no/svarut.forsendelse.v1.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "svarut-forsendelse",
+  "type": "object",
+  "definitions": {
+    "forsendelse": {
+      "definitions": {
+        "avsender": {
+          "type": "object",
+          "properties": {
+            "adresselinje1": {
+              "type": "string"
+            },
+            "adresselinje2": {
+              "type": "string"
+            },
+            "adresselinje3": {
+              "type": "string"
+            },
+            "navn": {
+              "type": "string"
+            },
+            "poststed": {
+              "type": "string"
+            },
+            "postnr": {
+              "type": "string"
+            }
+          }
+        },
+        "mottaker": {
+          "type": "object",
+          "properties": {
+            "adresse1": {
+              "type": "string"
+            },
+            "adresse2": {
+              "type": "string"
+            },
+            "adresse3": {
+              "type": "string"
+            },
+            "postnr": {
+              "type": "string"
+            },
+            "poststed": {
+              "type": "string"
+            },
+            "navn": {
+              "type": "string"
+            },
+            "land": {
+              "type": "string"
+            },
+            "orgnr": {
+              "type": "string"
+            },
+            "fnr": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "forsendelse": {
+      "type": "object",
+
+      "properties": {
+        "avsender": {
+          "$ref": "#/definitions/forsendelse/definitions/avsender"
+        },
+        "mottakker": {
+          "$ref": "#/definitions/forsendelse/definitions/mottaker"
+        },
+        "id": {
+          "type": "string"
+        },
+        "tittel": {
+          "type": "string"
+        },
+        "date": {
+          "type": "date-time"
+        },
+        "metadataFraAvleverendeSystem": {
+          "type": "object",
+          "properties": {
+            "saksaar": {
+              "type": "integer"
+            },
+            "journalaar": {
+              "type": "integer"
+            },
+            "journalsekvensnummer": {
+              "type": "integer"
+            },
+            "journalpostnummer": {
+              "type": "integer"
+            },
+            "journalposttype": {
+              "type": "string"
+            },
+            "journalstatus": {
+              "type": "string"
+            },
+            "journaldato": {
+              "type": "date-time"
+            },
+            "dokumentetsDato": {
+              "type": "date-time"
+            },
+            "tittel": {
+              "type": "string"
+            },
+            "saksBehandler": {
+              "type": "string"
+            },
+            "ekstraMetadata": {
+              "type": "array",
+              "items": {
+                "entry": {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "metadataForImport": {
+          "type": "object",
+          "properties": {
+            "sakssekvensnummer": {
+              "type": "integer"
+            },
+            "saksaar": {
+              "type": "integer"
+            },
+            "journalposttype": {
+              "type": "string"
+            },
+            "journalstatus": {
+              "type": "string"
+            },
+            "dokumentetsDato": {
+              "type": "date-time"
+            },
+            "tittel": {
+              "type": "string"
+            }
+          },
+          "serverUrl": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "niva": {
+            "type": "string"
+          },
+          "filmetadata": {
+            "type": "array",
+            "items": {
+            }
+          },
+          "svarSendesTil": {
+            "$ref": "#/definitions/forsendelse/definitions/mottaker"
+          },
+          "svarPaForsendelse": {
+            "type": "string"
+          },
+          "forsendelseType": {
+            "type": "string"
+          },
+          "eksternRef": {
+            "type": "string"
+          },
+          "lenker": {
+            "type": "array",
+            "items": {
+              "lenke": {
+                "type": "object",
+                "properties": {
+                  "ledetekst": {
+                    "type": "string"
+                  },
+                  "urlLenke": {
+                    "type": "string"
+                  },
+                  "urlTekst": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "mottakerSystem": {
+      "type": "string"
+    }
+  }
+}

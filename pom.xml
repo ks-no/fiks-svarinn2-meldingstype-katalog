@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>no.ks.fiks.pom</groupId>
+        <artifactId>fiks-ekstern-super-pom</artifactId>
+        <version>0.0.3</version>
+    </parent>
+    <groupId>no.ks.fiks</groupId>
+    <artifactId>feign-svarinn2-meldingstype-katalog</artifactId>
+    <version>${revision}${changelist}</version>
+    <name>${project.artifactId}</name>
+    <description>${project.artifactId}</description>
+    <url>https://github.com/ks-no/fiks-meldingstype-katalog</url>
+    <scm>
+        <connection>scm:git:git@github.com:ks-no/fiks-svarinn2-meldingstype-katalog.git</connection>
+        <developerConnection>scm:git:git@github.com:ks-no/fiks-svarinn2-meldingstype-katalog.git</developerConnection>
+        <url>https://github.com/ks-no/fiks-meldingstype-katalog</url>
+    </scm>
+    <properties>
+        <revision>1.0.0</revision>
+        <changelist>-SNAPSHOT</changelist>
+
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jsonschema2pojo</groupId>
+                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+                <version>0.5.1</version>
+                <configuration>
+                    <sourceDirectory>${basedir}/schemas</sourceDirectory>
+                    <targetPackage>no.ks.fiks.svarinn2.schemas</targetPackage>
+                    <includeAdditionalProperties>false</includeAdditionalProperties>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
