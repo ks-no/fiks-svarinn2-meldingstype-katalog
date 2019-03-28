@@ -2,32 +2,27 @@
   {
     "meldingstype": "no.ks.svarut.forsendelse.v1",
     "beskrivelse": "En KS SvarUt forsendelse",
-    "body": "required",
-    "bruksomrade": "melding"
+    "body": "required"    
   },
   {
     "meldingstype": "no.ks.fiks.svarinn2.svar.akseptert",
     "beskrivelse": "Brukes som svar på en melding. Uttrykker at meldingen er mottat og akseptert. JFR http ACCEPTED",
-    "body": "none",
-    "bruksomrade": "svar"
+    "body": "none"
   },
   {
     "meldingstype": "no.ks.fiks.svarinn2.svar.feilet",
     "beskrivelse": "Brukes som svar på en melding. Uttrykker at meldingen er mottat, men at en feil oppstod under behandlingen av denne. Jfr. http SERVER_ERROR",
-    "body": "optional",
-    "bruksomrade": "svar"
+    "body": "optional"
   },
   {
     "meldingstype": "no.ks.fiks.svarinn2.svar.avvist",
     "beskrivelse": "Brukes som svar på en melding. Uttrykker at meldingen er mottat, men at mottaker ikke var i stand til å behandle denne da den var ugyldig i forhold til spesifikasjon. Jfr. http BAD_REQUEST",
-    "body": "optional",
-    "bruksomrade": "svar"
+    "body": "optional"
   },
   {
     "meldingstype": "no.ks.fiks.svarinn2.svar.utlopt",
     "beskrivelse": "Brukes som svar på en melding. Uttrykker ",
-    "body": "optional",
-    "bruksomrade": "svar"
+    "body": "optional"
   }
 
 ]
