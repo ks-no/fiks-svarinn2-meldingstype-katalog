@@ -1,1 +1,1 @@
-# fiks-svarinn2-meldingstype-katalog
+# fiks-io-meldingstype-katalog

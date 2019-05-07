@@ -6,10 +6,10 @@
     <parent>
         <groupId>no.ks.fiks.pom</groupId>
         <artifactId>fiks-ekstern-super-pom</artifactId>
-        <version>0.0.3</version>
+        <version>0.0.8</version>
     </parent>
     <groupId>no.ks.fiks</groupId>
-    <artifactId>feign-svarinn2-meldingstype-katalog</artifactId>
+    <artifactId>feign-fiks-io-meldingstype-katalog</artifactId>
     <version>${revision}${changelist}</version>
     <name>${project.artifactId}</name>
     <description>${project.artifactId}</description>
@@ -23,18 +23,20 @@
         <revision>1.0.0</revision>
         <changelist>-SNAPSHOT</changelist>
 
+        <commons-lang.version>2.6</commons-lang.version>
+        <jackson.version>2.9.8</jackson.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
-            <version>2.4</version>
+            <version>${commons-lang.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.7</version>
+            <version>${jackson.version}</version>
         </dependency>
     </dependencies>
 
