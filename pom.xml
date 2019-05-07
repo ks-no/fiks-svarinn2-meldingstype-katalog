@@ -13,11 +13,11 @@
     <version>${revision}${changelist}</version>
     <name>${project.artifactId}</name>
     <description>${project.artifactId}</description>
-    <url>https://github.com/ks-no/fiks-meldingstype-katalog</url>
+    <url>https://github.com/ks-no/fiks-io-meldingstype-katalog</url>
     <scm>
-        <connection>scm:git:git@github.com:ks-no/fiks-svarinn2-meldingstype-katalog.git</connection>
-        <developerConnection>scm:git:git@github.com:ks-no/fiks-svarinn2-meldingstype-katalog.git</developerConnection>
-        <url>https://github.com/ks-no/fiks-meldingstype-katalog</url>
+        <connection>scm:git:git@github.com:ks-no/fiks-io-meldingstype-katalog.git</connection>
+        <developerConnection>scm:git:git@github.com:ks-no/fiks-io-meldingstype-katalog.git</developerConnection>
+        <url>https://github.com/ks-no/fiks-io-meldingstype-katalog</url>
     </scm>
     <properties>
         <revision>1.0.0</revision>
@@ -25,6 +25,8 @@
 
         <commons-lang.version>2.6</commons-lang.version>
         <jackson.version>2.9.8</jackson.version>
+        <junit-jupiter.version>5.4.2</junit-jupiter.version>
+        <junit-platform-commons.version>1.4.2</junit-platform-commons.version>
     </properties>
 
     <dependencies>
@@ -38,6 +40,7 @@
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -48,7 +51,7 @@
                 <version>0.5.1</version>
                 <configuration>
                     <sourceDirectory>${basedir}/schema</sourceDirectory>
-                    <targetPackage>no.ks.fiks.svarinn2.schema</targetPackage>
+                    <targetPackage>no.ks.fiks.io.schema</targetPackage>
                     <includeAdditionalProperties>false</includeAdditionalProperties>
                 </configuration>
                 <executions>
@@ -56,8 +59,16 @@
                         <goals>
                             <goal>generate</goal>
                         </goals>
+                        <phase>generate-sources</phase>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

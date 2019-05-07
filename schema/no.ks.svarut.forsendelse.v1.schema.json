@@ -72,7 +72,7 @@
         "avsender": {
           "$ref": "#/definitions/forsendelse/definitions/avsender"
         },
-        "mottakker": {
+        "mottaker": {
           "$ref": "#/definitions/forsendelse/definitions/mottaker"
         },
         "id": {
