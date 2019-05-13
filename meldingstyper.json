@@ -1,10 +1,5 @@
 [
   {
-    "meldingstype": "no.ks.svarut.forsendelse.v1",
-    "beskrivelse": "En KS SvarUt forsendelse",
-    "body": "required"    
-  },
-  {
     "meldingstype": "no.ks.fiks.io.svar.akseptert",
     "beskrivelse": "Brukes som svar på en melding. Uttrykker at meldingen er mottat og akseptert. JFR http ACCEPTED",
     "body": "none"

@@ -1,0 +1,7 @@
+[
+  {
+    "meldingstype": "no.ks.svarut.forsendelse.v1",
+    "beskrivelse": "En KS SvarUt forsendelse",
+    "body": "required"    
+  }
+]
