@@ -1,23 +1,27 @@
 [
   {
-    "meldingstype": "no.ks.fiks.io.svar.akseptert",
-    "beskrivelse": "Brukes som svar på en melding. Uttrykker at meldingen er mottat og akseptert. JFR http ACCEPTED",
+    "meldingstype": "no.ks.fiks.io.ukjent-melding.v1",
+    "beskrivelse": "Sendes når mottaker ikke kjenner til meldingstypen.",
+    "body": "None"
+  },
+  {
+    "meldingstype": "no.ks.fiks.io.ttl-utlopt.v1",
+    "beskrivelse": "Sendes fra Fiks IO når ttl utløper på en melding.",
     "body": "none"
   },
   {
-    "meldingstype": "no.ks.fiks.io.svar.feilet",
-    "beskrivelse": "Brukes som svar på en melding. Uttrykker at meldingen er mottat, men at en feil oppstod under behandlingen av denne. Jfr. http SERVER_ERROR",
-    "body": "optional"
+    "meldingstype": "no.nav.digisos.soknad.v1",
+    "beskrivelse": "Soknad fra nav til fagsystem",
+    "body": "required"
   },
   {
-    "meldingstype": "no.ks.fiks.io.svar.avvist",
-    "beskrivelse": "Brukes som svar på en melding. Uttrykker at meldingen er mottat, men at mottaker ikke var i stand til å behandle denne da den var ugyldig i forhold til spesifikasjon. Jfr. http BAD_REQUEST",
-    "body": "optional"
+    "meldingstype": "no.nav.digisos.soknadmottat.v1",
+    "beskrivelse": "Soknad er mottat av digisos fagsystem",
+    "body": "required"
   },
   {
-    "meldingstype": "no.ks.fiks.io.svar.utlopt",
-    "beskrivelse": "Brukes som svar på en melding. Uttrykker ",
-    "body": "optional"
+    "meldingstype": "no.nav.digisos.ettersendelse.v1",
+    "beskrivelse": "Ettersendelse av dokument",
+    "body": "required"
   }
-
 ]
