@@ -2,7 +2,7 @@
   {
     "meldingstype": "no.ks.fiks.io.ukjent-melding.v1",
     "beskrivelse": "Sendes når mottaker ikke kjenner til meldingstypen.",
-    "body": "None"
+    "body": "none"
   },
   {
     "meldingstype": "no.ks.fiks.io.ttl-utlopt.v1",
