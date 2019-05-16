@@ -1,8 +1,8 @@
 [
   {
-    "navn": "no.ks.fiks.io.systemmeldinger.v1",
+    "navn": "no.ks.fiks.io.v1",
     "beskrivelse": "Meldinger alle klienter må kunne motta, system meldigner for Fiks IO",
-    "mottameldinger": [
+    "meldinger": [
       "no.ks.fiks.io.ukjent-melding.v1",
       "no.ks.fiks.io.ttl-utlopt.v1"
     ]
@@ -10,12 +10,9 @@
   {
     "navn": "no.nav.digisos.fagsystem.v1",
     "beskrivelse": "Meldinger fagsystem må kunne motta for å få digisos korrespondanse fra nav.",
-    "mottameldinger": [
+    "meldinger": [
       "no.nav.digisos.soknad.v1",
       "no.nav.digisos.ettersendelse.v1"
-    ],
-    "sendemeldinger": [
-      "no.nav.digisos.soknadmottat.v1"
     ]
   }
 ]
