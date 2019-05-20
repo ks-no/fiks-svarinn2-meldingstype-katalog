@@ -1,22 +1,2 @@
 [
-  {
-    "meldingstype": "no.ks.fiks.io.ukjent-melding.v1",
-    "beskrivelse": "Sendes når mottaker ikke kjenner til meldingstypen."
-  },
-  {
-    "meldingstype": "no.ks.fiks.io.ttl-utlopt.v1",
-    "beskrivelse": "Sendes fra Fiks IO når ttl utløper på en melding."
-  },
-  {
-    "meldingstype": "no.nav.digisos.soknad.v1",
-    "beskrivelse": "Soknad fra nav til fagsystem"
-  },
-  {
-    "meldingstype": "no.nav.digisos.soknadmottat.v1",
-    "beskrivelse": "Soknad er mottat av digisos fagsystem"
-  },
-  {
-    "meldingstype": "no.nav.digisos.ettersendelse.v1",
-    "beskrivelse": "Ettersendelse av dokument"
-  }
 ]
