@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://fiks.ks.no//geointegrasjon.plan.oppretteplanidentoutput.v1.schema.json",
+  "title": "no.ks.geointegrasjon.plan.oppretteplanidentoutput.v1",
+  "description": "Tildelt ny arealplanId",
+  "type": "object",
+  "properties": {
+    "arealplanId": {
+      "description": "Planens identifikasjon",
+      "type": "object",
+      "properties": {
+        "administrativEnhet": {
+          "type": "string"
+        },
+        "planidentifikasjon": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [ "arealplanId" ]
+}

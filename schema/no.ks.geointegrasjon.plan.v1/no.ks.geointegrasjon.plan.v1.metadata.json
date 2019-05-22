@@ -1,0 +1,27 @@
+[
+  {
+    "meldingstype": "no.ks.geointegrasjon.plan.oppretteplanidentinput.v1",
+    "beskrivelse": "Opprette planident forespørsel (ePlansak)",
+    "body": "required"
+  },
+  {
+    "meldingstype": "no.ks.geointegrasjon.plan.oppretteplanidentoutput.v1",
+    "beskrivelse": "Svar med opprettet planident (Digital planregister)",
+    "body": "required"
+  },
+  {
+    "meldingstype": "no.ks.geointegrasjon.feil.format.v1",
+    "beskrivelse": "Mottaker forstod ikke format eller innhold i forespørsel. Lik http status 400 Bad Request"
+  },
+  {
+    "meldingstype": "no.ks.geointegrasjon.feil.ingentilgang.v1",
+    "beskrivelse": "Avsender har ikke lov til å få tilgang til valgte funksjon eller innhold. Lik http status 403 Forbidden"
+  },
+  {
+    "meldingstype": "no.ks.geointegrasjon.feil.ukjent.v1",
+    "beskrivelse": "Mottaker har støtt på en ukjent feil. Lik http status 500 Internal Server Error."
+  }
+]
+
+
+
