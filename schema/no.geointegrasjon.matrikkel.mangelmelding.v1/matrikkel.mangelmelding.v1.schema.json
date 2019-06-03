@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://fiks.ks.no/geointegrasjon.matrikkel.mangelmelding.v1.schema.json",
+  "title": "no.geointegrasjon.matrikkel.mangelmelding.v1",
+  "description": "Melding om mulig mangel eller feil i matrikkelen",
+  "type": "object",
+  "properties": {
+    "tittel": {
+      "description": "Tittel på melding",
+      "type": "string"
+    },
+    "beskrivelse": {
+      "description": "Beskrivelse av mangel",
+      "type": "string"
+    },
+    "avsender": {
+      "description": "Avsender (pålogget bruker i Id-porten). Fødselsnummer eller organisasjonsnummer bør være med så svar kan gis til digital postkasse.",
+      "type": "object",
+      "properties": {
+        "navn": {
+          "description": "Navn til avsender",
+          "type": "string"
+        },
+        "foedselsnummer": {
+          "type": "string"
+        },
+        "organisasjonsnummer": {
+          "type": "string"
+        },
+        "mobil": {
+          "description": "Mobil til avsender",
+          "type": "string"
+        },
+        "epost": {
+          "description": "Epost til avsender",
+          "type": "string"
+        }
+      }
+    },
+    "bygningsnummer": {
+      "description": "Hvilke bygningsnummer meldingen gjelder",
+      "type": "string"
+    },
+    "matrikkelnummer": {
+      "description": "Hvilke eiendom meldingen gjelder",
+      "type": "object",
+      "properties": {
+        "kommunenummer": {
+          "type": "string"
+        },
+        "gaardsnummer": {
+          "type": "string"
+        },
+        "bruksnummer": {
+          "type": "string"
+        },
+        "festenummer": {
+          "type": "string"
+        },
+        "seksjonsnummer": {
+          "type": "string"
+        }
+      }
+    },
+    "mangelkategori": {
+      "description": "Liste med kategori av mangler/feil",
+      "type": "object",
+      "properties": {
+        "kodeverdi": {
+          "type": "string"
+        },
+        "kodebeskrivelse": {
+          "type": "string"
+        }
+      }
+    }
+
+  },
+  "required": [ "tittel", "beskrivelse" ]
+}
