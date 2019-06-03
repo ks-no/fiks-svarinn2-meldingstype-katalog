@@ -1,5 +1,10 @@
 [
   {
+    "navn": "no.ks.geointegrasjon.plan.v1",
+    "beskrivelse": "Meldingsprotokoll for planregister.",
+    "url": ""
+  },
+  {
     "navn": "no.nav.digisos.fagsystem.v1",
     "beskrivelse": "Digisos fagsystem",
     "url": ""

@@ -1,13 +1,19 @@
 {
   "$id": "https://fiks.ks.no/no.nav.digisos.v1.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "DigisosSøknad",
+  "title": "Digisos søknad",
   "type": "object",
 
   "properties": {
     "eksternRef": {
+      "description": "Referanse fra NAV tilhørende søknaden",
       "type": "string"
+    },
+    "digisosId": {
+      "description": "Referanse til id på søknad i Fiks Digisos",
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
     }
-  }
-
+  },
+  "required": [ "eksternRef", "digisosId" ]
 }
