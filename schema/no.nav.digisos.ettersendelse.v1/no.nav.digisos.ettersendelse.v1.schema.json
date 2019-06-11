@@ -6,8 +6,31 @@
 
   "properties": {
     "eksternRef": {
+      "description": "Referanse fra NAV tilhørende ettersendelsen",
       "type": "string"
+    },
+    "digisosId": {
+      "description": "Referanse til id på tilhørende søknad i Fiks Digisos",
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "soknadLeveranseId": {
+      "description": "Informasjon om leveranse for sendt søknad",
+      "type": "object",
+      "properties": {
+        "sendtKanal": {
+          "type": "string",
+          "enum": [
+            "FIKS_IO",
+            "SVARUT"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        }
+      }
     }
-  }
-
+  },
+  "required": [ "eksternRef", "digisosId", "soknadLeveranseId" ]
 }
