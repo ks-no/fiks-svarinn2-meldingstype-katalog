@@ -3,5 +3,10 @@
     "navn": "no.nav.digisos.fagsystem.v1",
     "beskrivelse": "Digisos fagsystem",
     "url": ""
+  },
+    {
+    "navn": "no.ks.gi.planregister.v1",
+    "beskrivelse": "Planregister",
+    "url": ""
   }
 ]
