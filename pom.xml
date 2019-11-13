@@ -24,7 +24,7 @@
         <changelist>-SNAPSHOT</changelist>
 
         <commons-lang.version>2.6</commons-lang.version>
-        <jackson.version>2.9.10</jackson.version>
+        <jackson.version>2.9.10.1</jackson.version>
         <junit-jupiter.version>5.4.2</junit-jupiter.version>
         <junit-platform-commons.version>1.4.2</junit-platform-commons.version>
     </properties>
