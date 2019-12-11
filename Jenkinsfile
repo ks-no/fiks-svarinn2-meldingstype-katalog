@@ -4,7 +4,7 @@ pipeline {
         stage('runSchemaTests') {
             steps {
                 sh 'pwd'
-                sh 'runSchemaTests.sh'
+                sh './runSchemaTests.sh'
             }
         }
     }
