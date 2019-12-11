@@ -7,12 +7,12 @@ pipeline {
     stages {
         stage('runSchemaTests') {
             steps {
-                sh 'pwd'
                 sh './runSchemaTests.sh'
             }
         }
     }
     post {
+        always {
             deleteDir()
         }
     }
