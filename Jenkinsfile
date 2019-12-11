@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('runSchemaTests') {
             steps {
-                pwd
+                sh 'pwd'
                 sh 'runSchemaTests.sh'
             }
         }
