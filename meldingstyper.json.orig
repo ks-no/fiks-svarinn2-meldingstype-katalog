@@ -1,12 +1,8 @@
 [
   {
     "meldingstype": "no.ks.fiks.io.ukjent-melding.v1",
-<<<<<<< HEAD
     "beskrivelse": "Sendes når mottaker ikke kjenner til meldingstypen.",
     "body": "none"
-=======
-    "beskrivelse": "Sendes når mottaker ikke kjenner til meldingstypen."
->>>>>>> Endret meldingstyper igjen
   },
   {
     "meldingstype": "no.ks.fiks.io.ttl-utlopt.v1",
@@ -23,5 +19,21 @@
   {
     "meldingstype": "no.nav.digisos.ettersendelse.v1",
     "beskrivelse": "Ettersendelse av dokument"
-  }
+  },
+  {
+    "meldingstype": "no.ks.fiks.bekymringsmelding.privat.v1",
+    "beskrivelse": "Innsending av en privat bekymringsmelding."
+  },
+  {
+    "meldingstype": "no.ks.fiks.bekymringsmelding.privat.mottatt.v1",
+    "beskrivelse": "Privat bekymringsmelding er mottatt av fagsystemet."
+  },
+  {
+    "meldingstype": "no.ks.fiks.bekymringsmelding.offentlig.v1",
+    "beskrivelse": "Innsending av en offentlig bekymringsmelding."
+  },
+  {
+    "meldingstype": "no.ks.fiks.bekymringsmelding.offentlig.mottatt.v1",
+    "beskrivelse": "Offentlig bekymringsmelding er mottatt av fagsystemet."
+  },
 ]

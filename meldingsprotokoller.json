@@ -8,5 +8,10 @@
     "navn": "no.nav.digisos.fagsystem.v1",
     "beskrivelse": "Digisos fagsystem",
     "url": ""
+  },
+  {
+    "navn": "no.ks.fiks.bekymringsmelding.v1",
+    "beskrivelse": "Meldingsprotokoll for bekymringsmelding.",
+    "url": ""
   }
 ]

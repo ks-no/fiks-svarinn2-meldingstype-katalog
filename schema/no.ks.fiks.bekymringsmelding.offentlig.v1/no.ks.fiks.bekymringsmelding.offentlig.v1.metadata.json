@@ -1,11 +1,7 @@
 [
   {
     "meldingstype": "no.ks.fiks.bekymringsmelding.offentlig.v1",
-    "beskrivelse": "En offentlig bekymringsmelding'",
+    "beskrivelse": "En offentlig bekymringsmelding.'",
     "body": "required"
-  },
-  {
-    "meldingstype": "no.ks.fiks.bekymringsmelding.offentlig.v1.mottatt",
-    "beskrivelse": "Kvittering på at man har mottatt en offentlig bekymringsmelding"
   }
 ]
