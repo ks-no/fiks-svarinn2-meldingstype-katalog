@@ -1,0 +1,84 @@
+{
+	"referanseSaksmappe": {
+		"saksaar": 2019,
+		"sakssekvensnummer": 4567
+	},
+	"nyInnkommendeJournalpost": {
+		"eksternAvsenderEnhet": {
+			"enhetsidentifikator": {
+				"organisasjonsnummer": "914994780"
+			},
+			"navn": "Arkitektum AS",
+			"forretningsadresse": {
+				"adresselinje1": "Kyrkjevegen 6",
+				"postnr": {
+					"kodeverdi": "3800"
+				},
+				"poststed": "Bø"
+				}
+			},
+			"postadresse": {
+				"adresselinje1": "Postboks 4",
+				"postnr": {
+					"kodeverdi": "3833"
+				},
+				"poststed": "Bø",
+				"landkode": {
+					"kodeverdi": "NO",
+					"kodebeskrivelse": "Norge"
+				}
+			},
+			"kontaktinformasjon": {
+				"epostadresse": "post@arkitektum.no",
+				"mobiltelefon": "48148468"
+			},
+			"kontaktperson": "Tor Kjetil Nilsen"
+		},
+		"journalaar": 2019,
+		"internMottaker": {
+			"administrativEnhet": "Byggesak"
+		},
+		"journalsekvensnummer": 1,
+		"journalpostnummer": 1,
+		"sendtDato": "",
+		"dokument": [
+			{
+				"dokumenttype": {
+                    "kodeverdi": "MELDING",
+					"kodebeskrivelse": "Melding"
+				},
+				"tittel": "Ettersending av tegninger til byggesak",
+				"variantformat": {
+					"kodeverdi": "P",
+					"kodebeskrivelse": "Produksjonsformat"
+				},
+				"tilknyttetRegistreringSom": {
+					"kodeverdi": "H",
+					"kodebeskrivelse": "Hoveddokument"
+				},
+				"dokumentnummer": 1,
+				"filnavn": "brev.pdf",
+				"mimeType": "application/pdf"
+            },
+            {
+				"dokumenttype": {
+                    "kodeverdi": "TEGNING",
+					"kodebeskrivelse": "Tegning"
+				},
+				"tittel": "Fasadetegning",
+				"variantformat": {
+					"kodeverdi": "P",
+					"kodebeskrivelse": "Produksjonsformat"
+				},
+				"tilknyttetRegistreringSom": {
+					"kodeverdi": "V",
+					"kodebeskrivelse": "Vedlegg"
+				},
+				"dokumentnummer": 2,
+				"filnavn": "fasade.pdf",
+				"mimeType": "application/pdf"
+			}
+		]
+	
+	
+}

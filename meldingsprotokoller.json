@@ -5,6 +5,31 @@
     "url": ""
   },
   {
+    "navn": "no.ks.arkivlett.byggesak.v1",
+    "beskrivelse": "Meldingsprotokoll for søk etter byggesaker på en eiendom.",
+    "url": ""
+  },
+  {
+    "navn": "no.geointegrasjon.matrikkel.mangel.v1",
+    "beskrivelse": "Meldingsprotokoll for innmelding av feil og mangler i matrikkelen.",
+    "url": ""
+  },
+  {
+    "navn": "no.geointegrasjon.arkiv.innsyn.v2",
+    "beskrivelse": "Meldingsprotokoll for søk mot NOARK arkiv.",
+    "url": "http://geointegrasjon.no/arkiv/"
+  },
+  {
+    "navn": "no.geointegrasjon.arkiv.oppdatering.v2",
+    "beskrivelse": "Meldingsprotokoll for arkivering mot NOARK arkiv.",
+    "url": "http://geointegrasjon.no/arkiv/"
+  },
+  {
+    "navn": "no.geointegrasjon.arkiv.oppdatering.forenklet.v2",
+    "beskrivelse": "Meldingsprotokoll for forenklet arkivering mot NOARK arkiv.",
+    "url": "http://geointegrasjon.no/arkiv/"
+  },
+  {
     "navn": "no.nav.digisos.fagsystem.v1",
     "beskrivelse": "Digisos fagsystem",
     "url": ""

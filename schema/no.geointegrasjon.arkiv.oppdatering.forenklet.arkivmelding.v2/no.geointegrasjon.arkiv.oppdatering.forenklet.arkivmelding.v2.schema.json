@@ -1,0 +1,581 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://fiks.ks.no/ArkivmeldingForenklet.schema.json",
+  "title": "ArkivmeldingForenklet",
+  "type": "object",
+  "properties": {
+    "referanseSaksmappe": {
+      "properties": {
+        "saksaar": {
+          "type": "integer"
+        },
+        "sakssekvensnummer": {
+          "type": "integer"
+        },
+        "mappetype": {
+          "properties": {
+            "kodeverdi": {
+              "type": "string"
+            },
+            "kodebeskrivelse": {
+              "type": "string"
+            }
+          }
+        },
+        "saksdato": {
+          "type": "string",
+          "format": "date"
+        },
+        "tittel": {
+          "type": "string"
+        },
+        "administrativEnhet": {
+          "type": "string"
+        },
+        "offentligTittel": {
+          "type": "string"
+        },
+        "referanseAdministrativEnhet": {
+          "properties": {
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "saksansvarlig": {
+          "type": "string"
+        },
+        "referanseSaksansvarlig": {
+          "properties": {
+            "id": {
+              "type": "string"
+            }
+          }
+        },
+        "saksstatus": {
+          "properties": {
+            "kodeverdi": {
+              "type": "string"
+            },
+            "kodebeskrivelse": {
+              "type": "string"
+            }
+          }
+        },
+        "avsluttetAv": {
+          "type": "string"
+        },
+        "skjermetTittel": {
+          "type": "boolean"
+        }
+      }
+    },
+    "nyInnkommendeJournalpost": {
+      "properties": {
+        "eksternAvsenderEnhet": {
+          "properties": {
+            "enhetsidentifikator": {
+              "properties": {
+                "organisasjonsnummer": {
+                  "type": "string"
+                }
+              }
+            },
+            "navn": {
+              "type": "string"
+            },
+            "forretningsadresse": {
+              "properties": {
+                "adresselinje1": {
+                  "type": "string"
+                },
+                "adresselinje2": {
+                  "type": "string"
+                },
+                "adresselinje3": {
+                  "type": "string"
+                },
+                "postnr": {
+                  "properties": {
+                    "kodeverdi": {
+                      "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "poststed": {
+                  "type": "string"
+                },
+                "landkode": {
+                  "properties": {
+                    "kodeverdi": {
+                      "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "postadresse": {
+              "properties": {
+                "adresselinje1": {
+                  "type": "string"
+                },
+                "adresselinje2": {
+                  "type": "string"
+                },
+                "adresselinje3": {
+                  "type": "string"
+                },
+                "postnr": {
+                  "properties": {
+                    "kodeverdi": {
+                      "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "poststed": {
+                  "type": "string"
+                },
+                "landkode": {
+                  "properties": {
+                    "kodeverdi": {
+                      "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "kontaktinformasjon": {
+              "properties": {
+                "epostadresse": {
+                  "type": "string"
+                },
+                "mobiltelefon": {
+                  "type": "string"
+                },
+                "telefon": {
+                  "type": "string"
+                }
+              }
+            },
+            "kontaktperson": {
+              "type": "string"
+            }
+          }
+        },
+        "journalaar": {
+          "type": "integer"
+        },
+        "internMottaker": {
+          "properties": {
+            "administrativEnhet": {
+              "type": "string"
+            },
+            "referanseAdministrativEnhet": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              }
+            },
+            "saksbehandler": {
+              "type": "string"
+            },
+            "referanseSaksbehandler": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "journalsekvensnummer": {
+          "type": "integer"
+        },
+        "avskriving": {
+          "type": "string"
+        },
+        "journalpostnummer": {
+          "type": "integer"
+        },
+        "eksternAvsenderPerson": {
+          "properties": {
+            "navn": {
+              "type": "string"
+            },
+            "postadresse": {
+              "properties": {
+                "adresselinje1": {
+                  "type": "string"
+                },
+                "adresselinje2": {
+                  "type": "string"
+                },
+                "adresselinje3": {
+                  "type": "string"
+                },
+                "postnr": {
+                  "properties": {
+                    "kodeverdi": {
+                      "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "poststed": {
+                  "type": "string"
+                },
+                "landkode": {
+                  "properties": {
+                    "kodeverdi": {
+                      "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "bostedsadresse": {
+              "properties": {
+                "adresselinje1": {
+                  "type": "string"
+                },
+                "adresselinje2": {
+                  "type": "string"
+                },
+                "adresselinje3": {
+                  "type": "string"
+                },
+                "postnr": {
+                  "properties": {
+                    "kodeverdi": {
+                      "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "poststed": {
+                  "type": "string"
+                },
+                "landkode": {
+                  "properties": {
+                    "kodeverdi": {
+                      "type": "string"
+                    },
+                    "kodebeskrivelse": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "kontaktinformasjon": {
+              "properties": {
+                "epostadresse": {
+                  "type": "string"
+                },
+                "mobiltelefon": {
+                  "type": "string"
+                },
+                "telefon": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "journalstatus": {
+          "properties": {
+            "kodeverdi": {
+              "type": "string"
+            },
+            "kodebeskrivelse": {
+              "type": "string"
+            }
+          }
+        },
+        "journaldato": {
+          "type": "string",
+          "format": "date"
+        },
+        "dokumentetsDato": {
+          "type": "string",
+          "format": "date"
+        },
+        "mottattDato": {
+          "type": "string",
+          "format": "date"
+        },
+        "sendtDato": {
+          "type": "string",
+          "format": "date"
+        },
+        "forfallsdato": {
+          "type": "string",
+          "format": "date"
+        },
+        "offentlighetsvurdertDato": {
+          "type": "string",
+          "format": "date"
+        },
+        "dokument": {
+          "type": "array",
+          "items": {
+          "properties": {
+            "dokumenttype": {
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            },
+            "tittel": {
+              "type": "string"
+            },
+            "variantformat": {
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            },
+            "format": {
+              "description": "Format",
+              "type": "object"
+            },
+            "tilknyttetRegistreringSom": {
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            },
+            "dokumentnummer": {
+              "type": "integer"
+            },
+            "filnavn": {
+              "type": "string"
+            },
+            "mimeType": {
+              "type": "string"
+            }
+          }
+        }
+      }
+      }
+    },
+    "nyUtgaaendeJournalpost": {
+      "properties": {
+        "eksternMottaker": {
+          "type": "integer"
+        },
+        "internAvsender": {
+          "properties": {
+            "administrativEnhet": {
+              "type": "string"
+            },
+            "referanseAdministrativEnhet": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              }
+            },
+            "saksbehandler": {
+              "type": "string"
+            },
+            "referanseSaksbehandler": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "avskrivning": {
+          "type": "integer"
+        },
+        "dokument": {
+          "properties": {
+            "dokumenttype": {
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            },
+            "tittel": {
+              "type": "string"
+            },
+            "variantformat": {
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            },
+            "format": {
+              "description": "Format",
+              "type": "object"
+            },
+            "tilknyttetRegistreringSom": {
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            },
+            "dokumentnummer": {
+              "type": "integer"
+            },
+            "filnavn": {
+              "type": "string"
+            },
+            "mimeType": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "nyttArkivnotat": {
+      "properties": {
+        "internMottaker": {
+          "properties": {
+            "administrativEnhet": {
+              "type": "string"
+            },
+            "referanseAdministrativEnhet": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              }
+            },
+            "saksbehandler": {
+              "type": "string"
+            },
+            "referanseSaksbehandler": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "internAvsender": {
+          "properties": {
+            "administrativEnhet": {
+              "type": "string"
+            },
+            "referanseAdministrativEnhet": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              }
+            },
+            "saksbehandler": {
+              "type": "string"
+            },
+            "referanseSaksbehandler": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "dokument": {
+          "properties": {
+            "dokumenttype": {
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            },
+            "tittel": {
+              "type": "string"
+            },
+            "variantformat": {
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            },
+            "format": {
+              "description": "Format",
+              "type": "object"
+            },
+            "tilknyttetRegistreringSom": {
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            },
+            "dokumentnummer": {
+              "type": "integer"
+            },
+            "filnavn": {
+              "type": "string"
+            },
+            "mimeType": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
