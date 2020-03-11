@@ -8,5 +8,10 @@
     "navn": "no.ks.test.gi.planregister.v1",
     "beskrivelse": "Planregister test",
     "url": ""
-  }
+  },
+    {
+      "navn": "no.digdir.einnsyn.v1",
+      "beskrivelse": "System som tilbyr innsyn i saker vie eInnsyn"
+      "url": ""
+    }
 ]
