@@ -23,5 +23,15 @@
     "navn":"no.dibk.arkivlett.byggesak.v1",
     "beskrivelse":"Mottakssystem for innsyn i byggesaker.",
     "url":"https://ks-no.github.io/fiks-plattform/tjenester/fiksio/arkivlett/"
+  },
+    {
+    "navn":"no.ks.fiks.gi.arkivintegrasjon.innsyn.v1",
+    "beskrivelse":"Gi arkiv 2.0 innsyn",
+    "url":"https://github.com/ks-no/gi-arkiv-2.0/wiki"
+  },
+    {
+    "navn":"no.ks.fiks.gi.arkivintegrasjon.oppdatering.v1",
+    "beskrivelse":"Gi arkiv 2.0 oppdatering",
+    "url":"https://github.com/ks-no/gi-arkiv-2.0/wiki"
   }
 ]
